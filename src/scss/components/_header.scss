@@ -38,6 +38,7 @@
 li a {
   color: var.$almostblack;
   font-family: var.$font;
+  font-size: var.$body;
 }
 
 .showMenu {
@@ -82,6 +83,7 @@ li a {
   li a {
     display: block;
     padding-left: 2rem;
+    font-size: var.$body;
   }
   .showMenu{
     background-color: white;

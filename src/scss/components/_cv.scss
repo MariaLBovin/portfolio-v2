@@ -12,8 +12,8 @@
 
 .header-text {
     border-bottom: 1px solid lightgray;
-    margin-bottom: 3rem;
-    padding-bottom: 3rem;
+    margin-bottom: 2.5rem;
+    font-size: var.$h2;
 }
 .work-list {
     display: flex;
@@ -25,6 +25,20 @@
     
     :hover{
         background: var.$tealgradient;
+    }
+    h2{
+        font-size: var.$h2;
+    }
+    .left-divs span{
+        font-size: var.$body;
+    }
+}
+.right-divs{
+    h2{
+        font-size: var.$h2;
+    }
+    p{
+        font-size: var.$body;
     }
 }
 
@@ -50,7 +64,7 @@
         margin-right: 2rem;
         z-index:1;
 
-        h3{
+        h2{
             margin-top: 0;
             margin-bottom: .2rem
         }
@@ -58,13 +72,7 @@
             margin-top:0;
         }
        }
-
-       h3{
-        margin-top: 0;
-
-       }
-
-       .right-divs h4{
+       .right-divs h2{
         margin-top: 0;
        }
     }

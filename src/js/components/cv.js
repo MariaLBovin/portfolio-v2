@@ -9,11 +9,11 @@ function printCV() {
     cvPlacement.innerHTML += `
           <div class=cv-wrapper>
             <div class="divs${[i]} left-divs">
-              <h3 class="workplace">${CV[i].place}</h3>
+              <h2 class="workplace">${CV[i].place}</h2>
               <span class="employment-time">${CV[i].time}</span>
             </div>
             <div id=right-div${[i]} class="divs${[i]} right-divs hidden">
-              <h4 class="title">${CV[i].title}</h3>
+              <h2 class="title">${CV[i].title}</h2>
               <p class="description">${CV[i].desc}</p>
             </div>
           </div>`;

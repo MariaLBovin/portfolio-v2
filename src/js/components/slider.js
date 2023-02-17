@@ -24,7 +24,7 @@ function displayWork() {
         </div>
         <div class="text-block">
         <p class="category">${selectedWork[i].category}</p>
-        <h2>${selectedWork[i].company}</h2>
+        <h3>${selectedWork[i].company}</h2>
         <p>${selectedWork[i].description}</p>
         <a href="${selectedWork[i].projektlink}">Titta på projeketet</a>
         </div>`;

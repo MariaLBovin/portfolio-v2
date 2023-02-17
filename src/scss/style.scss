@@ -1,0 +1,17 @@
+@import "./components/header";
+@import "./components/presentation";
+@import "./components/swiper";
+@import "./components/cv";
+@import "./components/contact";
+@import "./components/footer";
+
+:root {
+  font-size: rem(16px);
+}
+
+body {
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+

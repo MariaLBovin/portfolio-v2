@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,800;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header class="headerbox">
+      <div class="headerlogo">
+        <img class="logo" src="./public/assets/logo.png" />
+        <span> Maria Larsson Bovin</span>
+      </div>
+      <ul class="menu" id="topmenu">
+          <li><a class="menuItem" href="#">Home</a></li>
+          <li><a class="menuItem" href="#">Profile</a></li>
+          <li><a class="menuItem" href="#">About</a></li>
+          <li><a class="menuItem" href="#">Contacts</a></li>
+      </ul> 
+      <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <span class="menuIcon material-icons">menu</span>
+        <span class="closeIcon material-icons">close</span>
+      </button>
+    </header>
+  <section class="presentation">
+        <p class="presentation__p--sm">Hej!</p>
+        <h1 class="presentation__h1">Jag är Maria,</h1>
+        <p class="presentation__p typed-elem">stockholmsbaserad student som just nu nördar ner mig i
+        <span class="presentation__span text-highlight" data-typed='{"backSpeed": 50,"strings": ["api:er", "testning", "ramverk", "UX design"]}'></span>
+          <span class="presentation__span d-block">med målet att bli färdig frontend utvecklare juni 2024</span>
+        </p>
+    </div>
+  </section>
+  <section class="portfolio">
+      <h2 class="header-text">Portfolio</h2>
+        <div class="slideshow">   
+          <div class="swiper swiper-thumbnail">
+            <div class="swiper-wrapper swiper-placement"></div> 
+            <div class="swiper-button-prev material-icons arrow-back">arrow_back</div>
+            <div class="swiper-button-next material-icons arrow-forward">arrow_forward</div>
+          </div>
+          <div class="swiper swiper-large">
+            <div class="swiper-wrapper swiper-wrapper-large"></div>
+          </div>
+      </div>
+  </section>
+  <section class="about">
+      <h2 class="header-text">Tidigare erfarenhet</h2>
+      <article class="work-list">
+        <div class="cv-container"></div>
+      </article>
+  </section>
+  <section class="contact">
+      <h3>Vill du ta en fika?</h3>
+      <a href="mailto:maria.bovin@gmail.com">Hör av dig!</a>
+  </section>
+  <footer>
+    <p>All rights reserved. © Maria Larsson Bovin 2023.</p>
+    <div class="footer-logos">
+      <a href="https://www.linkedin.com/in/mariabovin/"><img src="./public/assets/linkedin-svgrepo-com.svg" alt="LinkedIn logo" class="footer__socialmedia--linkedinlogo"></a>
+      <a href="https://github.com/MariaLBovin"><img src="./public/assets/github-svgrepo-com.svg" alt="Github logo" class="footer__socialmedia--githublogo"></a>
+    </div>
+  </footer>
+    <script type="module" src="./src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

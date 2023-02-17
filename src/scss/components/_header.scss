@@ -1,0 +1,86 @@
+@use "../variables" as var;
+
+.headerbox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.headerlogo {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+
+  span {
+    padding-left: 5px;
+    font-family: var.$font;
+  }
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.menu {
+  transform: translateY(-100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+li a {
+  color: var.$almostblack;
+  font-family: var.$font;
+}
+
+.showMenu {
+  transform: translateY(0);
+  background-color: var.$teal;
+  right: 0;
+  left: 70%;
+  height: fit-content;
+  padding-bottom: 25px;
+  border-radius: 0 0 0 45px;
+  margin: 0;
+}
+.hamburger {
+  right: 1rem;
+  padding: 4px;
+  border-radius: 50%;
+  background: var.$teal;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+  position: fixed;
+  border: none;
+}
+
+.closeIcon {
+  display: none;
+  border: none;
+}
+@media screen and (min-width: var.$tablet-bp) {
+  .hamburger {
+    display: none;
+  }
+  .menu {
+    left: 50%;
+    padding-top: 1rem;
+    display: inline-flex;
+    justify-content: space-between;
+    transform: translateY(0);
+    right: 50px;
+  }
+  li a {
+    display: block;
+    padding-left: 2rem;
+  }
+}

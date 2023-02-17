@@ -1,0 +1,18 @@
+$font: "Poppins", sans-serif;
+
+//colors
+$teal: #08c5d5;
+$tealgradient:linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(255,255,255,1) 100%);
+$almostblack: #0f172a;
+$purple: #6f46ff;
+$almostwhite: #f0e5e3;
+
+//link-colors
+
+$hover: var($purple);
+$underline: var($teal);
+
+//breakpoints
+$mobile-bp: 375px;
+$tablet-bp: 744px;
+$desktop-bp: 1440px;

@@ -1,0 +1,78 @@
+@use "../variables" as var;
+
+.about{
+    margin-top: 2rem;
+    font-family: var.$font;
+}
+.cv-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray;
+}
+
+.header-text {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+}
+.work-list {
+    display: flex;
+    flex-direction: row;
+}
+.left-divs{
+    margin-right: 2rem;
+    cursor: pointer;
+    
+    :hover{
+        background: var.$tealgradient;
+    }
+}
+
+.hidden{
+    opacity: 1;
+}
+.visible{
+    opacity: 1;
+}
+@media screen and (min-width: var.$tablet-bp){
+    .work-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .cv-wrapper {
+        display: flex;
+        flex-direction: row;
+        border-bottom: none;
+        margin-bottom: 1rem;;
+
+       .left-divs {
+        width: 33%;
+        margin-right: 2rem;
+        z-index:1;
+
+        h3{
+            margin-top: 0;
+            margin-bottom: .2rem
+        }
+        span {
+            margin-top:0;
+        }
+       }
+
+       h3{
+        margin-top: 0;
+
+       }
+
+       .right-divs h4{
+        margin-top: 0;
+       }
+    }
+    
+    .hidden{
+        display: none;
+    }
+    .visible{
+        display: block;
+    }
+}

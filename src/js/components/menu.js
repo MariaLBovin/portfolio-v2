@@ -1,6 +1,4 @@
-
-
-const menuBox =document.querySelector('.headerbox');
+const menuBox = document.querySelector('.headerbox');
 const menu = document.querySelector('#topmenu');
 const menuItems = document.querySelectorAll('.menuItem');
 const hamburger = document.querySelector('.hamburger');
@@ -25,13 +23,28 @@ menuItems.forEach((menuItem) => {
   menuItem.addEventListener('click', toggleMenu);
 });
 
-let largeMenuScrollPos = window.pageYOffset;
-window.onscroll = function () {
-  const currentScrollPos = window.pageYOffset;
-  if (largeMenuScrollPos > currentScrollPos) {
-    menuBox.style.top = '0';
+function scollMenu() {
+  let largeMenuScrollPos = window.pageYOffset;
+  if (window.matchMedia('(max-width: 744px)').matches) {
+    window.onscroll = function () {
+      const currentScrollPos = window.pageYOffset;
+      if (largeMenuScrollPos > currentScrollPos) {
+        menu.style.top = '0';
+      } else {
+        menu.style.top = '-50px';
+      }
+      largeMenuScrollPos = currentScrollPos;
+    };
   } else {
-    menuBox.style.top = '-50px';
+    window.onscroll = function () {
+      const currentScrollPos = window.pageYOffset;
+      if (largeMenuScrollPos > currentScrollPos) {
+        menuBox.style.top = '0';
+      } else {
+        menuBox.style.top = '-50px';
+      }
+      largeMenuScrollPos = currentScrollPos;
+    };
   }
-  largeMenuScrollPos = currentScrollPos;
-};
+}
+scollMenu();

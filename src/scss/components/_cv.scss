@@ -14,11 +14,16 @@
     p{
         font-size: var.$body;
     }
+    .skills{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 
     .skills-text{
         font-family: var.$font;
         font-size: var.$body;
         margin: 0;
+        list-style: none;
     }
 }
 .cv-wrapper {

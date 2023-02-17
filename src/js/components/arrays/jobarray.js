@@ -2,7 +2,7 @@ export const selectedWork = [
   {
     image: [
       {
-        src: '/assets/clue_2.webp',
+        src: './assets/clue_2.webp',
         alt: 'startsida på ett spel som heter Clue',
       },
     ],
@@ -12,7 +12,7 @@ export const selectedWork = [
     projektlink: 'https://marialbovin.github.io/clue/',
   },
   {
-    image: [{ src: '/assets/donutshop_2.webp', alt: 'en munkshop' }],
+    image: [{ src: './assets/donutshop_2.webp', alt: 'en munkshop' }],
     category: 'Ecommerce',
     company: 'Gottfrids munkar',
     description:
@@ -20,7 +20,7 @@ export const selectedWork = [
     projektlink: 'https://marialbovin.github.io/Gottfrids_munkar/',
   },
   {
-    image: [{ src: '/assets/wheatly2.webp', alt: 'en produktslider' }],
+    image: [{ src: './assets/wheatly2.webp', alt: 'en produktslider' }],
     category: 'Ecommerce',
     company: 'Wheatly',
     description: 'Kodprojekt efter given design i Vue',

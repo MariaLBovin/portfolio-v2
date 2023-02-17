@@ -3,3 +3,4 @@ import './js/components/menu';
 import './js/components/typed';
 import './js/components/slider';
 import './js/components/cv';
+import './js/components/skills';

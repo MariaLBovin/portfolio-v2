@@ -4,6 +4,23 @@
     margin-top: 2rem;
     font-family: var.$font;
 }
+.about-me {
+        h2{
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    font-size: var.$h2;
+        }
+    p{
+        font-size: var.$body;
+    }
+
+    .skills-text{
+        font-family: var.$font;
+        font-size: var.$body;
+        margin: 0;
+    }
+}
 .cv-wrapper {
     display: flex;
     flex-direction: column;
@@ -13,6 +30,7 @@
 .header-text {
     border-bottom: 1px solid lightgray;
     margin-bottom: 2.5rem;
+    padding: 2rem;
     font-size: var.$h2;
 }
 .work-list {

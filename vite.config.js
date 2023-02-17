@@ -1,8 +1,8 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: "/portfolio-v2/",
+  base: '/portfolio-v2/',
   define: {
-    "process.env": {},
+    'process.env': {},
   },
 });

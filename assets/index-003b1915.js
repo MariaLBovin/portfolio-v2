@@ -39,17 +39,17 @@
         </div>
         <div class="text-block">
         <p class="category">${b[a].category}</p>
-        <h2>${b[a].company}</h2>
+        <h3>${b[a].company}</h2>
         <p>${b[a].description}</p>
         <a href="${b[a].projektlink}">Titta på projeketet</a>
         </div>`}z();const V=new Swiper(".swiper-large",{slidesPerView:1,loopedSlides:3,loop:!0});new Swiper(".swiper-thumbnail",{slidesPerView:1,loopedSlides:3,loop:!0,spaceBetween:10,breakpoints:{500:{slidesPerView:2,spaceBetween:20},744:{slidesPerView:2,spaceBetween:30},1200:{slidesPerView:3,spaceBetween:40,centeredSlides:!0}},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},a11y:{prevSlideMessage:"Previous slide",nextSlideMessage:"Next slide"},keyboard:{enabled:!0,onlyInViewport:!1},thumbs:{swiper:V}});const C=[{place:"Norstedts förlagsgrupp",time:"2017-2022",title:"Kommunikationsansvarig",desc:"- PR <br>- Kommunikationsstrategi <br>- Social mediastrategi <br>- Intern projektledare IT-projekt"},{place:"Fackförbundet Vision",time:"2017",title:"Kommunikatör",desc:"- Strategisk kommunikation <br>- Utvecklingsledare utvalda IT-projekt "},{place:"Berättarministeriet",time:"2016-2017",title:"Digitalt ansvarig",desc:"- Intern projektledare IT-projekt <br>- Kommunikationsstrategi sociala medier <br>- Contentproducent sociala medier "},{place:"Kungliga Operan",time:"2011-2016",title:"Kommunikationsansvarig, KAM",desc:"- Kommunikationsstrategi <br>- Annonsplanering <br>- Contentproducent sociala medier <br>- KAM "}],K=document.querySelector(".cv-container");function J(){for(let a=0;a<C.length;a++)K.innerHTML+=`
           <div class=cv-wrapper>
             <div class="divs${[a]} left-divs">
-              <h3 class="workplace">${C[a].place}</h3>
+              <h2 class="workplace">${C[a].place}</h2>
               <span class="employment-time">${C[a].time}</span>
             </div>
             <div id=right-div${[a]} class="divs${[a]} right-divs hidden">
-              <h4 class="title">${C[a].title}</h3>
+              <h2 class="title">${C[a].title}</h2>
               <p class="description">${C[a].desc}</p>
             </div>
           </div>`}J();const j=document.querySelector("#right-div0");j.classList.add("visible");function R(a){const v=document.querySelectorAll(".right-divs"),h=a.currentTarget.classList[0];v.forEach(l=>{l.classList.contains(h)?l.classList.remove("hidden"):l.classList.add("hidden")}),j.classList.remove("visible")}document.querySelectorAll(".left-divs").forEach(a=>{a.addEventListener("click",R)});

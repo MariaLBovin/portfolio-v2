@@ -1,0 +1,96 @@
+@use "../variables" as var;
+
+.portfolio {
+  font-family: var.$font;
+  
+
+  .header-text{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    font-size: var.$h2;
+    padding-left: 0;
+    
+  }
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+.swiper-button-prev:after, .swiper-button-next:after{
+  display:none
+}
+.arrow-back, .arrow-forward{
+  background-color: var.$almostblack;
+  color: var.$almostwhite;
+  width:2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.4rem;
+}
+
+.swiper-slide{
+  opacity: .4;
+
+  &-active {
+    opacity: 1;
+  }
+}
+.swiper-slide-large{
+  display: flex;
+  flex-direction: column;
+
+  .img{
+    max-width: 100%;
+  }
+
+  .category{
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: .5;
+    letter-spacing: 0.18rem;
+    margin-bottom: 0;
+    font-size: var.$body;
+  }
+  h3{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size:var.$h3;
+  }
+  p{
+    font-size: var.$body;
+  }
+  a{
+    color: var.$almostblack;
+    text-decoration: underline 0.2rem;
+    text-decoration-color: var.$teal;
+    font-size: var.$body-small;
+  }
+  a:hover {
+    background: var.$tealgradient;
+    
+  }
+}
+
+@media screen and (min-width: var.$tablet-bp) {
+  .swiper-slide-large
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+  .img {
+    width: 50%;
+    padding-right: 0.8rem;
+  }
+  .text-block{
+    width: 50%;
+    padding-left: .8rem;
+  }
+}

@@ -17,6 +17,7 @@
     .skills{
         display: grid;
         grid-template-columns: 50% 50%;
+        padding: 0;
     }
 
     .skills-text{
@@ -35,7 +36,7 @@
 .header-text {
     border-bottom: 1px solid lightgray;
     margin-bottom: 2.5rem;
-    padding: 2rem;
+    padding-bottom: 2rem;
     font-size: var.$h2;
 }
 .work-list {
@@ -51,6 +52,8 @@
     }
     h2{
         font-size: var.$h2;
+        margin-bottom: .7rem;
+
     }
     .left-divs span{
         font-size: var.$body;
@@ -58,7 +61,8 @@
 }
 .right-divs{
     h2{
-        font-size: var.$h2;
+        font-size: var.$h3;
+        margin-top: 0;
     }
     p{
         font-size: var.$body;

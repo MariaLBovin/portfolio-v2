@@ -1,7 +1,9 @@
 $font: "Poppins", sans-serif;
 $h1: calc(1.675rem + 5.1vw);
-$h2:1.4rem;
+$h2:calc(1.4rem + 5.1vw);
 $body: calc(1.286rem + .432vw);
+$body-small: calc(1rem + .432vw);
+
 
 //colors
 $teal: #08c5d5;

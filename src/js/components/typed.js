@@ -1,23 +1,48 @@
-import Typed from 'typed.js';
+/* eslint-disable no-plusplus */
+const textDisplay = document.getElementById('text');
+const phrases = ['javascript', 'API:er', 'ramverk'];
+let i = 0;
+let j = 0;
+let currentPhrase = [];
+let isDeleting = false;
+let isEnd = false;
 
-(function () {
-  const typedElems = document.querySelectorAll('[data-typed]') || [];
+function loop() {
+  isEnd = false;
+  textDisplay.innerHTML = currentPhrase.join('');
 
-  typedElems.forEach((elem) => {
-    const elemOptions = elem.dataset.typed
-      ? JSON.parse(elem.dataset.typed)
-      : {};
+  if (i < phrases.length) {
+    if (!isDeleting && j <= phrases[i].length) {
+      currentPhrase.push(phrases[i][j]);
+      j++;
+      textDisplay.innerHTML = currentPhrase.join('');
+    }
 
-    const defaultOptions = {
-      typeSpeed: 50,
-      backSpeed: 35,
-      backDelay: 1000,
-      loop: true,
-    };
-    const options = {
-      ...defaultOptions,
-      ...elemOptions,
-    };
-    new Typed(elem, options);
-  });
-}());
+    if (isDeleting && j <= phrases[i].length) {
+      currentPhrase.pop(phrases[i][j]);
+      j--;
+      textDisplay.innerHTML = currentPhrase.join('');
+    }
+
+    if (j === phrases[i].length) {
+      isEnd = true;
+      isDeleting = true;
+    }
+
+    if (isDeleting && j === 0) {
+      currentPhrase = [];
+      isDeleting = false;
+      i++;
+      if (i === phrases.length) {
+        i = 0;
+      }
+    }
+  }
+  const spedUp = Math.random() * (80 - 50) + 50;
+  const normalSpeed = Math.random() * (300 - 200) + 200;
+  // eslint-disable-next-line no-nested-ternary
+  const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed;
+  setTimeout(loop, time);
+}
+
+loop();

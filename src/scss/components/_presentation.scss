@@ -33,20 +33,8 @@
 
 }
 
-.text-highlight {
-  position: relative;
-  font-weight: 700 !important;
-}
-
-.text-highlight:after {
-  content: "";
-  height: 0.18rem;
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0.3125rem;
-  background: var.$teal;
+.text {
+  background: var.$tealgradient;
 }
 .d-block {
   display: block !important;

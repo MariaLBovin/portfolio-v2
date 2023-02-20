@@ -19,7 +19,7 @@ export const CV = [{
 {
   place: 'Kungliga Operan',
   time: '2011-2016',
-  title: 'Kommunikationsansvarig, KAM',
+  title: 'Kommunikationsansvarig',
   desc: '- Kommunikationsstrategi <br>- Annonsplanering <br>- Contentproducent sociala medier <br>- KAM ',
 },
 ];

@@ -4,6 +4,7 @@
     margin-top: 2rem;
     font-family: var.$font;
     overflow: hidden;
+    word-break: break-all;
 }
 .about-me p{
 
@@ -70,7 +71,7 @@
     .title{
         font-size: var.$h3;
         margin-top: 0;
-        word-wrap: break-word;
+        
     }
     p{
         font-size: var.$body;

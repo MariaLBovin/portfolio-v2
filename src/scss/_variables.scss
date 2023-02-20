@@ -1,9 +1,15 @@
 $font: "Poppins", sans-serif;
-$h1: calc(1.675rem + 5.1vw);
-$h2:calc(1.4rem + 5.1vw);
-$h3: calc(1.1rem + 5.1vw);
-$body: calc(1.286rem + .432vw);
-$body-small: calc(1rem + .432vw);
+$h1desktop: 6rem;
+$h2desktop:3.25rem;
+$h3desktop: 2.7rem;
+$bodydesktop: 2rem;
+$body-smalldesktop: 1.7rem;
+
+$h1: 4rem;
+$h2: 2rem;
+$h3: 1.7rem;
+$body: 1rem;
+$body-small: 0.7rem;
 
 
 //colors

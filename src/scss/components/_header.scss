@@ -40,6 +40,8 @@ li a {
   color: var.$almostblack;
   font-family: var.$font;
   font-size: var.$body;
+  margin-top: 1rem;
+  margin-right: .5rem;
 }
 
 .showMenu {
@@ -64,10 +66,13 @@ li a {
   position: fixed;
   border: none;
 }
-
+.menuIcon {
+  color: black;
+}
 .closeIcon {
   display: none;
   border: none;
+  color: black;
 }
 @media screen and (min-width: var.$tablet-bp) {
   .hamburger {
@@ -88,5 +93,13 @@ li a {
   }
   .showMenu{
     background-color: white;
+  }
+}
+@media screen and (min-width: var.$desktop-bp) {
+  .headerlogo span {
+    font-size: var.$body-smalldesktop;
+  }
+  .menu li a{
+    font-size: var.$bodydesktop;
   }
 }

@@ -2,18 +2,15 @@
 
 .portfolio {
   font-family: var.$font;
-  
-
-  .header-text{
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
-    font-size: var.$h2;
-    padding-left: 0;
-    
-  }
 }
-
+.header-text{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  font-size: var.$h2;
+  padding-left: 0;
+  
+}
 .swiper {
   position: relative;
   width: 100%;
@@ -78,6 +75,7 @@
 }
 
 @media screen and (min-width: var.$tablet-bp) {
+  
   .swiper-slide-large
   {
     display: flex;
@@ -92,5 +90,24 @@
   .text-block{
     width: 50%;
     padding-left: .8rem;
+  }
+}
+
+@media screen and (min-width: var.$desktop-bp) {
+  .header-text {
+    font-size: var.$h2desktop;
+  }
+  .category{
+    font-size: var.$bodydesktop;
+  }
+
+  .swiper-slide-large h3 {
+    font-size: var.$h3desktop;
+  }
+  .swiper-slide-large p {
+    font-size: var.$bodydesktop;
+  }
+  .swiper-slide-large a{
+    font-size: var.$body-smalldesktop;
   }
 }
